@@ -83,6 +83,7 @@ In current version:
 
 #![doc(html_root_url = "https://docs.rs/ref_thread_local/0.1.0")]
 
+#![cfg_attr(not(feature = "std"), no_std)]
 #[doc(hidden)]
 pub use std::ops::Deref as __Deref;
 #[doc(hidden)]
